@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>BOOKSKY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    hello
+    <div class="navbar">
+        <h1>BOOKSKY</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert Kiyosaki</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam fugiat explicabo hic praesentium vel adipisci nobis. Nobis ut quasi iure consequatur consequuntur maxime sunt architecto suscipit eligendi? Minima asperiores eos dolorem quas dolores. Voluptatibus laudantium ipsum repellat porro perspiciatis quae voluptas repudiandae est, voluptatem beatae facilis inventore quis. Recusandae eaque error doloremque harum porro nostrum libero rem eos esse. Ab minima repellat sed laboriosam facilis pariatur facere quam, sequi ut! Nemo veniam similique ipsum sunt fuga qui vel! Accusantium sit error laudantium nulla odio labore praesentium hic? Eum aperiam veniam qui reprehenderit deserunt maxime doloremque cupiditate voluptatibus dolorum id!</p>
+            <button>delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add New Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title">
+            <input type="text" placeholder="Book Author" id="book-author">
+            <textarea placeholder="Description" id="book-description"></textarea>
+            <button id="add-book">Add Book</button>
+            <button id="cancel-popup">Close</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
