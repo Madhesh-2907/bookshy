@@ -67,6 +67,7 @@ body{
     top:0;
     left:0;
     z-index: 1;
+    display: none;
 }
 
 .popup-box{
@@ -76,8 +77,9 @@ body{
     border-radius: 10px;
     position: absolute;
     top: 20%;
-    left:20%;
+    left:30%;
     z-index: 2;
+    display: none;
 }
 
 .popup-box input{
@@ -89,3 +91,36 @@ body{
     font-size: 20px;
     border-bottom: 2px solid black;
 }
+
+.popup-box textarea{
+    background:transparent;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.popup-box input::placeholder{
+    color:black;
+}
+
+.popup-box textarea::placeholder{
+    color:black;
+}
+
+.popup-box button{
+    background-color:black;
+    color:#FD6569;
+    border-radius: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border:none;
+    margin-top:10px;
+}
+
+.popup-box input:focus, .popup-box textarea:focus{
+    outline:none;
+} 
